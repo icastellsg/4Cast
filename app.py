@@ -4,6 +4,7 @@ from sewy import SewyForm, sewyPredictions, sewyPredictionsJSON
 from knx import TouchForm, touchPredictions, touchPredictionsJSON
 import json
 import numpy as np
+import os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret'
@@ -55,3 +56,6 @@ def predict_temperature_knx():
 @app.errorhandler(404)
 def not_found(e):
     return render_template('404.html')
+
+if __name__ == "__main__":
+    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
