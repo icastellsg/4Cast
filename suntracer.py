@@ -7,13 +7,13 @@ import numpy as np
 import predictions_helper
 from pickle import load
 
-model1h = load_model('../LSMTTensorflow/bestModel_MultiVariable_60.keras')
-model6h = load_model('../LSMTTensorflow/bestModel_MultiVariable_360.keras')
-model12h = load_model('../LSMTTensorflow/bestModel_MultiVariable_720.keras')
+model1h = load_model('./LSMTTensorflow/bestModel_MultiVariable_60.keras')
+model6h = load_model('./LSMTTensorflow/bestModel_MultiVariable_360.keras')
+model12h = load_model('./LSMTTensorflow/bestModel_MultiVariable_720.keras')
 
-scaler_temperatura = load(open('../model_training/scalers/suntracer/scaler_temperature_suntracer.pkl', 'rb'))
-scaler_brillo = load(open('../model_training/scalers/suntracer/scaler_brightness_suntracer.pkl', 'rb'))
-scaler_viento = load(open('../model_training/scalers/suntracer/scaler_wind_suntracer.pkl', 'rb'))
+scaler_temperatura = load(open('./model_training/scalers/suntracer/scaler_temperature_suntracer.pkl', 'rb'))
+scaler_brillo = load(open('./model_training/scalers/suntracer/scaler_brightness_suntracer.pkl', 'rb'))
+scaler_viento = load(open('./model_training/scalers/suntracer/scaler_wind_suntracer.pkl', 'rb'))
 
 models = [model1h, model6h, model12h]
 labels = ['Temperatura', 'Brillo', 'Viento', 'Lluvia']

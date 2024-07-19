@@ -9,35 +9,35 @@ from pickle import load
 
 labels = ['Temperatura', 'Humedad', 'CO2']
 
-model1h_207 = load_model('../LSMTTensorflow/bestModel_touch_207_60.keras')
-model6h_207 = load_model('../LSMTTensorflow/bestModel_touch_207_360.keras')
-model12h_207 = load_model('../LSMTTensorflow/bestModel_touch_207_720.keras')
+model1h_207 = load_model('./LSMTTensorflow/bestModel_touch_207_60.keras')
+model6h_207 = load_model('./LSMTTensorflow/bestModel_touch_207_360.keras')
+model12h_207 = load_model('./LSMTTensorflow/bestModel_touch_207_720.keras')
 
-scaler_temperatura_207 = load(open('../model_training/scalers/touch/scaler_temperature_touch_207.pkl', 'rb'))
-scaler_humedad_207 = load(open('../model_training/scalers/touch/scaler_humidity_touch_207.pkl', 'rb'))
-scaler_co2_207 = load(open('../model_training/scalers/touch/scaler_co2_touch_207.pkl', 'rb'))
+scaler_temperatura_207 = load(open('./model_training/scalers/touch/scaler_temperature_touch_207.pkl', 'rb'))
+scaler_humedad_207 = load(open('./model_training/scalers/touch/scaler_humidity_touch_207.pkl', 'rb'))
+scaler_co2_207 = load(open('./model_training/scalers/touch/scaler_co2_touch_207.pkl', 'rb'))
 
 models_207 = [model1h_207, model6h_207, model12h_207]
 scalers_207 = [scaler_temperatura_207, scaler_humedad_207, scaler_co2_207]
 
-model1h_214 = load_model('../LSMTTensorflow/bestModel_touch_214_60.keras')
-model6h_214 = load_model('../LSMTTensorflow/bestModel_touch_214_360.keras')
-model12h_214 = load_model('../LSMTTensorflow/bestModel_touch_214_720.keras')
+model1h_214 = load_model('./LSMTTensorflow/bestModel_touch_214_60.keras')
+model6h_214 = load_model('./LSMTTensorflow/bestModel_touch_214_360.keras')
+model12h_214 = load_model('./LSMTTensorflow/bestModel_touch_214_720.keras')
 
-scaler_temperatura_214 = load(open('../model_training/scalers/touch/scaler_temperature_touch_214.pkl', 'rb'))
-scaler_humedad_214 = load(open('../model_training/scalers/touch/scaler_humidity_touch_214.pkl', 'rb'))
-scaler_co2_214 = load(open('../model_training/scalers/touch/scaler_co2_touch_214.pkl', 'rb'))
+scaler_temperatura_214 = load(open('./model_training/scalers/touch/scaler_temperature_touch_214.pkl', 'rb'))
+scaler_humedad_214 = load(open('./model_training/scalers/touch/scaler_humidity_touch_214.pkl', 'rb'))
+scaler_co2_214 = load(open('./model_training/scalers/touch/scaler_co2_touch_214.pkl', 'rb'))
 
 models_214 = [model1h_214, model6h_214, model12h_214]
 scalers_214 = [scaler_temperatura_214, scaler_humedad_214, scaler_co2_214]
 
-model1h_215 = load_model('../LSMTTensorflow/bestModel_touch_215_60.keras')
-model6h_215 = load_model('../LSMTTensorflow/bestModel_touch_215_360.keras')
-model12h_215 = load_model('../LSMTTensorflow/bestModel_touch_215_720.keras')
+model1h_215 = load_model('./LSMTTensorflow/bestModel_touch_215_60.keras')
+model6h_215 = load_model('./LSMTTensorflow/bestModel_touch_215_360.keras')
+model12h_215 = load_model('./LSMTTensorflow/bestModel_touch_215_720.keras')
 
-scaler_temperatura_215 = load(open('../model_training/scalers/touch/scaler_temperature_touch_215.pkl', 'rb'))
-scaler_humedad_215 = load(open('../model_training/scalers/touch/scaler_humidity_touch_215.pkl', 'rb'))
-scaler_co2_215 = load(open('../model_training/scalers/touch/scaler_co2_touch_215.pkl', 'rb'))
+scaler_temperatura_215 = load(open('./model_training/scalers/touch/scaler_temperature_touch_215.pkl', 'rb'))
+scaler_humedad_215 = load(open('./model_training/scalers/touch/scaler_humidity_touch_215.pkl', 'rb'))
+scaler_co2_215 = load(open('./model_training/scalers/touch/scaler_co2_touch_215.pkl', 'rb'))
 
 models_215 = [model1h_215, model6h_215, model12h_215]
 scalers_215 = [scaler_temperatura_215, scaler_humedad_215, scaler_co2_215]

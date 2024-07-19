@@ -9,41 +9,41 @@ from pickle import load
 
 labels = ['Temperatura', 'Brillo', 'Humedad', 'Presión del aire', 'CO2']
 
-model1h_207 = load_model('../LSMTTensorflow/bestModel_sewy_207_60.keras')
-model6h_207 = load_model('../LSMTTensorflow/bestModel_sewy_207_360.keras')
-model12h_207 = load_model('../LSMTTensorflow/bestModel_sewy_207_720.keras')
+model1h_207 = load_model('./LSMTTensorflow/bestModel_sewy_207_60.keras')
+model6h_207 = load_model('./LSMTTensorflow/bestModel_sewy_207_360.keras')
+model12h_207 = load_model('./LSMTTensorflow/bestModel_sewy_207_720.keras')
 
-scaler_temperatura_207 = load(open('../model_training/scalers/sewy/scaler_temperature_sewy_207.pkl', 'rb'))
-scaler_brillo_207 = load(open('../model_training/scalers/sewy/scaler_brightness_sewy_207.pkl', 'rb'))
-scaler_humedad_207 = load(open('../model_training/scalers/sewy/scaler_humidity_sewy_207.pkl', 'rb'))
-scaler_airpressure_207 = load(open('../model_training/scalers/sewy/scaler_airpressure_sewy_207.pkl', 'rb'))
-scaler_co2_207 = load(open('../model_training/scalers/sewy/scaler_co2_sewy_207.pkl', 'rb'))
+scaler_temperatura_207 = load(open('./model_training/scalers/sewy/scaler_temperature_sewy_207.pkl', 'rb'))
+scaler_brillo_207 = load(open('./model_training/scalers/sewy/scaler_brightness_sewy_207.pkl', 'rb'))
+scaler_humedad_207 = load(open('./model_training/scalers/sewy/scaler_humidity_sewy_207.pkl', 'rb'))
+scaler_airpressure_207 = load(open('./model_training/scalers/sewy/scaler_airpressure_sewy_207.pkl', 'rb'))
+scaler_co2_207 = load(open('./model_training/scalers/sewy/scaler_co2_sewy_207.pkl', 'rb'))
 
 models_207 = [model1h_207, model6h_207, model12h_207]
 scalers_207 = [scaler_temperatura_207, scaler_brillo_207, scaler_humedad_207, scaler_airpressure_207, scaler_co2_207]
 
-model1h_214 = load_model('../LSMTTensorflow/bestModel_sewy_214_60.keras')
-model6h_214 = load_model('../LSMTTensorflow/bestModel_sewy_214_360.keras')
-model12h_214 = load_model('../LSMTTensorflow/bestModel_sewy_214_720.keras')
+model1h_214 = load_model('./LSMTTensorflow/bestModel_sewy_214_60.keras')
+model6h_214 = load_model('./LSMTTensorflow/bestModel_sewy_214_360.keras')
+model12h_214 = load_model('./LSMTTensorflow/bestModel_sewy_214_720.keras')
 
-scaler_temperatura_214 = load(open('../model_training/scalers/sewy/scaler_temperature_sewy_214.pkl', 'rb'))
-scaler_brillo_214 = load(open('../model_training/scalers/sewy/scaler_brightness_sewy_214.pkl', 'rb'))
-scaler_humedad_214 = load(open('../model_training/scalers/sewy/scaler_humidity_sewy_214.pkl', 'rb'))
-scaler_airpressure_214 = load(open('../model_training/scalers/sewy/scaler_airpressure_sewy_214.pkl', 'rb'))
-scaler_co2_214 = load(open('../model_training/scalers/sewy/scaler_co2_sewy_214.pkl', 'rb'))
+scaler_temperatura_214 = load(open('./model_training/scalers/sewy/scaler_temperature_sewy_214.pkl', 'rb'))
+scaler_brillo_214 = load(open('./model_training/scalers/sewy/scaler_brightness_sewy_214.pkl', 'rb'))
+scaler_humedad_214 = load(open('./model_training/scalers/sewy/scaler_humidity_sewy_214.pkl', 'rb'))
+scaler_airpressure_214 = load(open('./model_training/scalers/sewy/scaler_airpressure_sewy_214.pkl', 'rb'))
+scaler_co2_214 = load(open('./model_training/scalers/sewy/scaler_co2_sewy_214.pkl', 'rb'))
 
 models_214 = [model1h_214, model6h_214, model12h_214]
 scalers_214 = [scaler_temperatura_214, scaler_brillo_214, scaler_humedad_214, scaler_airpressure_214, scaler_co2_214]
 
-model1h_215 = load_model('../LSMTTensorflow/bestModel_sewy_215_60.keras')
-model6h_215 = load_model('../LSMTTensorflow/bestModel_sewy_215_360.keras')
-model12h_215 = load_model('../LSMTTensorflow/bestModel_sewy_215_720.keras')
+model1h_215 = load_model('./LSMTTensorflow/bestModel_sewy_215_60.keras')
+model6h_215 = load_model('./LSMTTensorflow/bestModel_sewy_215_360.keras')
+model12h_215 = load_model('./LSMTTensorflow/bestModel_sewy_215_720.keras')
 
-scaler_temperatura_215 = load(open('../model_training/scalers/sewy/scaler_temperature_sewy_215.pkl', 'rb'))
-scaler_brillo_215 = load(open('../model_training/scalers/sewy/scaler_brightness_sewy_215.pkl', 'rb'))
-scaler_humedad_215 = load(open('../model_training/scalers/sewy/scaler_humidity_sewy_215.pkl', 'rb'))
-scaler_airpressure_215 = load(open('../model_training/scalers/sewy/scaler_airpressure_sewy_215.pkl', 'rb'))
-scaler_co2_215 = load(open('../model_training/scalers/sewy/scaler_co2_sewy_215.pkl', 'rb'))
+scaler_temperatura_215 = load(open('./model_training/scalers/sewy/scaler_temperature_sewy_215.pkl', 'rb'))
+scaler_brillo_215 = load(open('./model_training/scalers/sewy/scaler_brightness_sewy_215.pkl', 'rb'))
+scaler_humedad_215 = load(open('./model_training/scalers/sewy/scaler_humidity_sewy_215.pkl', 'rb'))
+scaler_airpressure_215 = load(open('./model_training/scalers/sewy/scaler_airpressure_sewy_215.pkl', 'rb'))
+scaler_co2_215 = load(open('./model_training/scalers/sewy/scaler_co2_sewy_215.pkl', 'rb'))
 
 models_215 = [model1h_215, model6h_215, model12h_215]
 scalers_215 = [scaler_temperatura_215, scaler_brillo_215, scaler_humedad_215, scaler_airpressure_215, scaler_co2_215]
